@@ -1,6 +1,3 @@
-
-markdown
-Copiar código
 # Integrantes
 ----------------------------------------------------------------
 - **Luis Martín Gimeno**  
