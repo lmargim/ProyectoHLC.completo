@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyages Machado - Travel agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link href="css/estilo.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar sticky-top navbar-expand-lg custom-nav-bg">
+        <div class="container-fluid mi-nav-bg">
+
+            <!-- LOGO Y TITULO -->
+            <a class="navbar-brand logo d-flex align-items-center" id="logo" href="./home.html">
+                <img src="images/logo.png" width="60" height="60" class="d-inline-block align-text-center me-3">
+                <div class="d-flex flex-column align-items-start">
+                    <div class="d-flex flex-column">
+                        <span class="titulo">Voyages Machado</span>
+                    </div>
+                    <div class="separador"></div>
+                    <span class="subtitulo">travel agency</span>
+                </div>
+            </a>
+            <!-- LOGO Y TITULO -->
+
+            <!-- BOTON RESOLUCION MOVIL -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- BOTON RESOLUCION MOVIL -->
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- ms-auto para que se centre en margen horizontal -->
+                <ul class="navbar-nav ms-auto" id="nav">
+                    <li class="nav-item dropdown ms-auto merriweather-italic">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Viajes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item merriweather-regular" id="mnuAñadirViaje" href="">Añadir
+                                    viaje</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item merriweather-regular" id="mnuListadoViajes" href="#">Listado de
+                                    viajes</a></li>
+                            <li><a class="dropdown-item merriweather-regular" id="mnuListarPaquetesPorViajes"
+                                    href="#">Listar paquetes de un viaje</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown ms-auto merriweather-italic">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Paquetes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item merriweather-regular" id="mnuAñadirPaquete"
+                                    href="alta_paquete.php">Añadir
+                                    paquete</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item merriweather-regular" href="buscar_paquete.php">Buscar un
+                                    paquete</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item merriweather-regular" id="mnuListadoPaquetes"
+                                    href="listar_paquetes.php">Listado
+                                    de paquetes</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown ms-auto merriweather-italic">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Clientes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item merriweather-regular" href="alta_cliente.php">Añadir
+                                    cliente</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item merriweather-regular" href="buscar_cliente.php">Buscar un
+                                    cliente</a></li>
+                            <li><a class="dropdown-item merriweather-regular" href="listado_clientes.php">Listado de
+                                    clientes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- ms-auto para que se ponga a la drch, d-none para que desaparezca y d-lg-block para que en resoluciones grandes sea visible -->
+                <a class="btn btn-outline-secondary ms-auto d-none d-lg-block" href="./home.html" type="submit">Home</a>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR -->
